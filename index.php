@@ -13,8 +13,10 @@
 			<div class="main">
 				<!-- The loop -->
 				<?php if(have_posts()): ?>
+					<!-- the_post() tells WP to move to the next post -->
 					<?php while(have_posts()): the_post(); ?>
 						<h3><?php the_title(); ?></h3>
+						<?php the_content(); ?>
 					<?php endwhile; ?>
 				<?php else: ?>
 					<!-- wpautop() takes double line breaks and makes them into paragraphs -->
