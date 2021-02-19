@@ -16,6 +16,7 @@
 					<!-- the_post() tells WP to move to the next post -->
 					<?php while(have_posts()): the_post(); ?>
 						<h3><?php the_title(); ?></h3>
+						<div class="meta">Created by <?php the_author(); ?></div>
 						<?php the_content(); ?>
 					<?php endwhile; ?>
 				<?php else: ?>
