@@ -34,8 +34,6 @@
 				<?php endif; ?>
 			</div>
 		</header>
-		<footer>
-			<p>&copy; <?php the_time('Y'); ?> - <?php bloginfo('name'); ?></p>
-		</footer>
+		<?php get_footer(); ?>
 	</body>
 </html>
