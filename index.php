@@ -23,6 +23,7 @@
 							Created by <?php the_author(); ?> on <?php the_date('l jS \of F Y h:i:s A'); ?><br/>
 							<!-- Created by matovu on 9:14 am -->
 							Created by <?php the_author(); ?> on <?php the_time(); ?><br/>
+							<!-- Created by matovu on February 8, 2021 9:14:am -->
 							Created by <?php the_author(); ?> on <?php the_time('F j, Y g:i:a'); ?>
 						</div>
 						<?php the_content(); ?>
@@ -33,5 +34,8 @@
 				<?php endif; ?>
 			</div>
 		</header>
+		<footer>
+			<p>&copy; <?php the_time('Y'); ?> - <?php bloginfo('name'); ?></p>
+		</footer>
 	</body>
 </html>
