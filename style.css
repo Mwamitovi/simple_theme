@@ -45,5 +45,13 @@ a {
 	margin: 10px 0;
 	text-decoration: none; }
 
+.post-thumbnail img {
+	width: 100%;
+  height: auto;
+  margin-top: 10px; }
+
+
+
+
 
 

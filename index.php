@@ -33,7 +33,7 @@
 
 				</div>
 
-				<?php the_content(); ?>
+				<?php the_excerpt(); ?>
 
 				<a class="button" href="<?php the_permalink(); ?>">
 					Read more
