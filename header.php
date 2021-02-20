@@ -19,7 +19,16 @@
 		<header>
 
 			<h1><?php bloginfo('name'); ?></h1>
-
 			<small><?php bloginfo('description'); ?></small>
 
 		</header>			
+
+		<nav class="main-nav">
+			<div class="container">
+				
+				<!-- create a variable - $args - to hold array of arguments -->
+				<?php $args = array( 'theme_location' => 'primary'); ?>
+				<!-- display navigation menu -->
+				<?php wp_nav_menu( $args ); ?>
+			</div>
+		</nav>
