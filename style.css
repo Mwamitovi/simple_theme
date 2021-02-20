@@ -42,8 +42,36 @@ a {
 	color: #007CBA; }
 
 .main {
-	padding: 75px 150px;
-	margin-top: 12.5px; }
+	padding: 75px 75px 75px 150px;
+	margin-top: 12.5px;
+  float: left;
+  width: 55%; }
+
+.sidebar {
+	float: right;
+ 	width: 28%; }
+
+.side-widget {
+	border: 1px #FAFAFA solid; 
+	padding: 10px 20px; 
+  margin: 10px 150px 10px 0; }
+
+.side-widget:first-child {
+  margin-top: 80px; }
+
+.side-widget ul {
+	padding-left: 2px; }
+
+.side-widget li {
+	list-style: none;
+	line-height: 2.2em;
+	border-bottom: 1px #CCC dotted; }
+
+.side-widget a {
+	text-decoration: none; }
+
+.clr {
+	clear: both; }
 
 .post {
 	padding-bottom: 25px;
