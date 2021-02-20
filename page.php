@@ -1,36 +1,49 @@
 		
 <?php get_header(); ?>
 
-<div class="main">
+<div class="container">
+	<div class="main">
 
-	<?php if( have_posts() ): ?>
+		<?php if( have_posts() ): ?>
 
-		<?php while( have_posts() ): the_post(); ?>
+			<?php while( have_posts() ): the_post(); ?>
 
-			<article class="post">
-				
-				<h3>
-					<?php the_title(); ?>
-				</h3>
+				<article class="post">
+					
+					<h3>
+						<?php the_title(); ?>
+					</h3>
 
-				<?php if( has_post_thumbnail() ) : ?>
-					<div class="post-thumbnail">
-						<?php the_post_thumbnail(); ?>
-					</div>
-				<?php endif; ?>
+					<?php if( has_post_thumbnail() ) : ?>
+						<div class="post-thumbnail">
+							<?php the_post_thumbnail(); ?>
+						</div>
+					<?php endif; ?>
 
-				<?php the_content(); ?>
+					<?php the_content(); ?>
 
-			</article>
+				</article>
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
-	<?php else: ?>
+		<?php else: ?>
 
-		<?php echo wpautop('Sorry, No posts were found'); ?>
+			<?php echo wpautop('Sorry, No posts were found'); ?>
 
-	<?php endif; ?>
+		<?php endif; ?>
 
+	</div>
+
+	<div class="sidebar">
+	
+		<?php if( is_active_sidebar( 'sidebar' )) : ?>
+			<?php dynamic_sidebar( 'sidebar' ); ?>
+		<?php endif; ?>
+		
+	</div>
+
+	<div class="clr"></div>
+	
 </div>
 
 <?php get_footer(); ?>
