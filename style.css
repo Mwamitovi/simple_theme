@@ -6,9 +6,44 @@ Description: A Very Simple WordPress Theme
 Version: 1.0
 */
  
+html,
 body {
-	background: #4A4A4A; 
-  color: #FAFAFA; }
+	margin: -12px 0;
+	padding: 0; }
+
+header,
+footer {
+	padding: 50px 120px;
+	background: #4A4A4A;
+	color: #FAFAFA; }
+
+footer {
+	text-align: center; }
 
 a {
-	color: #FAFAFA; }
+	color: #007CBA; }
+
+.main {
+	padding: 75px 150px;
+	margin-top: 12.5px; }
+
+.post {
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px #FAFAFA solid;
+	overflow: hidden; }
+
+.post:last-child {
+	padding-bottom: 0px;
+	border-bottom: none; }
+
+.post a.button {
+	display: inline-block;
+	background: #4A4A4A;
+  color: #FAFAFA;
+  padding: 8.5px 11.5px;
+	margin: 10px 0;
+	text-decoration: none; }
+
+
+
