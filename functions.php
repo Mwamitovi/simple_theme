@@ -3,6 +3,11 @@
 function simple_theme_setup() {
 	// featured image support
 	add_theme_support( 'post-thumbnails' );
+
+	// register navigation menu location for a theme
+	register_nav_menus(
+		array( 'primary' => __( 'Primary Menu' ))
+	);
 }
 
 /**
