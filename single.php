@@ -36,6 +36,18 @@
 
 		<?php endif; ?>
 
+		<?php 
+
+			/**
+			 * @deprecated
+			 *
+			 * Theme without "comments.php" is deprecated since version 3.0.0 with no alternative available. 
+			 *
+			 */
+			comments_template(); 
+
+		?>
+
 	</div>
 
 <?php get_footer(); ?>
