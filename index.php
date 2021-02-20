@@ -30,7 +30,11 @@
 						<!-- Created by <?php /** the_author(); ?> on <?php the_time(); **/ ?><br/> -->
 
 						<!-- Created by matovu on February 8, 2021 9:14:am -->
-						Created by <?php the_author(); ?> on <?php the_time('F j, Y g:i:a'); ?>
+						Created by 
+						<a href="<?php get_author_posts_url( get_the_author_meta( 'ID' )); ?>">
+							<?php the_author(); ?>
+						</a>
+						on <?php the_time('F j, Y g:i:a'); ?>
 
 					</div>
 
